@@ -19,29 +19,34 @@ $title = $text . ' ' . $city;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <?= $site_data['html'] ?>
-    <title><?= $title ?></title>
+    <title>
+        <?= $title ?>
+    </title>
 </head>
 
 <body>
 
-
-    <!--Шапка сайта-->
     <header class="header">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 container">
-                    <h1 class="header__title">header</h1><!-- + h1-h6. -->
+                    <div class="header__box">
+                        <h1 class="header__title"> ЖАЛЮЗИ И РУЛОННЫЕ ШТОРЫ<br>
+                            НА ЗАКАЗ В ЧЕЧНЕ </h1>
+                        <div class="header__wrapper">
+                            <p class="header__descr"> Бесплатный замер, доставка и установка<br>
+                                по Чеченской Республике. </p>
+                        </div>
+                        <p class="header__adress">Грозный, Аргун, Гудермес, Курчалой,<br>
+                            Урус-мартан, Шали и все сёла республики.</p>
+                        <div class="header__inner">
+                            <a class="header__btn" href="#">Позвонить</a>
+                            <a class="header__link" href="#">Смотреть цены</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Навигационные ссылки -->
-        <nav class="header-nav">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 container">...</div>
-                </div>
-            </div>
-        </nav>
     </header>
     <!-- Основное содержимое страницы -->
     <main class="main">
