@@ -230,3 +230,14 @@ body{
 .blindsVertical__price {
     @include price();
 }
+//
+.stock__title {
+    margin: 0;
+    @include title();
+}
+.stock__img {
+    padding: 56px 0;
+    img {
+        width: 100%;
+    }
+}
