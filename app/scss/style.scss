@@ -2,6 +2,46 @@ $primaryBgColor: #ffcc00;
 $primaryColor: #000;
 $primaryBtnColor: #339e34;
 
+@mixin title {
+    font-size: 36px;
+    line-height: 40px;
+    padding: 56px 0px 16px;
+    text-align: center;
+}
+@mixin priceM {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    padding-top: 16px;
+}
+@mixin price {
+    text-align: center;
+    margin: 0;
+    padding: 16px 0px 56px;
+    span {
+        &:nth-child(1) {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: normal;
+            text-decoration: line-through;
+        }
+        &:nth-child(2) {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: bold;
+        }
+        &:nth-child(3) {
+            padding: 4px 11px 5px 15px;
+            font-size: 16px;
+            line-height: 16px;
+            border-radius: 12.5px;
+            background: rgba(44, 185, 44, 1);
+            color: #fff;
+            vertical-align: middle;
+            margin-left: 14px;
+        }
+    }
+}
 
 *{
     box-sizing: border-box;
@@ -28,6 +68,7 @@ body{
     padding: 0;
     font: 20px Helvetica,Arial,sans-serif;
     max-width: 1920px;
+    line-height: 28px;
     min-width: 320px;
     color: $primaryColor;
 }
@@ -98,4 +139,94 @@ body{
         color: #000;
         background-color: #e4b805;
     }
+}
+//benefits
+.benefits {
+    background-color: #e6e6e6;
+    padding: 56px 0;
+}
+.benefits__title {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.benefits__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.benefits__item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+.benefits__img {
+    width: 40%;
+    img {
+        width: 100%;
+    }
+}
+.benefits__descr {
+    text-align: center;
+    padding: 0 30px;
+}
+//
+.swiper {
+    width: 529px;
+    height: 529px;
+  }
+.swiper-slide img {
+    width: 100%;
+}
+.rollerBlinds__title {
+    @include title();
+}
+.rollerBlinds__priceM {
+    @include priceM();
+}
+.rollerBlinds__price {
+    @include price();
+}
+//curtainsDayNight
+.curtainsDayNight {
+    background-color: #f6f5f3;
+}
+.curtainsDayNight__title {
+    @include title();
+}
+.curtainsDayNight__box {
+}
+.curtainsDayNight__priceM {
+    @include priceM();
+}
+.curtainsDayNight__price {
+    @include price();
+}
+//horizontalBlinds
+.horizontalBlinds__title {
+    @include title();
+}
+.horizontalBlinds__priceM {
+    @include priceM();
+}
+.horizontalBlinds__price {
+    @include price();
+}
+//blindsVertical
+.blindsVertical {
+    background-color: #f6f5f3;
+}
+.blindsVertical__title {
+    @include title();
+}
+.blindsVertical__priceM {
+    @include priceM();
+}
+.blindsVertical__price {
+    @include price();
 }
