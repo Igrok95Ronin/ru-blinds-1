@@ -263,6 +263,43 @@ $title = $text . ' ' . $city;
                 </div>
             </div>
         </section>
+        <section class="forms">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 container">
+                        <h2 class="forms__title">Оставить заявку</h2>
+                        <div class="forms__box">
+
+                             <form id="jq_form" class="mt-5">
+                                <div class="my-3">
+                                    <input class="form-control" placeholder="Имя" name="jq_name" type="text">
+                                    <div id="jq_name" style="font-weight:700;font-size:15px;color:red;padding-top:2px;display:none">это обязательное поле.</div>
+                                </div>
+                                <div class="my-4">
+                                    <input class="form-control" placeholder="Номер телефона" name="jq_phone" type="text">
+                                    <div id="jq_phone" style="font-weight:700;font-size:15px;color:red;padding-top:2px;display:none">это обязательное поле.</div>
+                                </div>
+                                <div class="my-4">
+                                    <input class="form-control" placeholder="Адрес" name="jq_street" type="text">
+                                </div>
+                                <div class="my-4">
+                                    <input class="form-control" placeholder="E-Mail" name="jq_email" type="text">
+                                </div>
+                                <div class="my-4">
+                                    <textarea rows="3" class="form-control" name="jq_text" placeholder="Сообщение"></textarea>
+                                    <div id="jq_text" style="font-weight:700;font-size:15px;color:red;padding-top:2px;display:none">это обязательное поле.</div>
+                                </div>
+                                <div>
+                                    <input class="btn text-uppercase fw-bold mb-5 px-3 py-2 forms__button" type="submit" id="jq_submit" value="Отправить">
+                                </div>
+                                <div id="jq_success" style="display:none">Спасибо за вашу заявку.</div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!--Нижний колонтитул страницы-->
     <footer class="footer">

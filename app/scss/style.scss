@@ -278,3 +278,16 @@ body{
     line-height: 40px;
     letter-spacing: 2px;
 }
+//Forms
+.forms__title {
+    @include title();
+}
+.forms__button {
+    background-color: $primaryBtnColor;
+    color: #fff;
+    transition: all .3s;
+    &:hover {
+        color: #fff;
+        background-color: #118c13;
+    }
+}
